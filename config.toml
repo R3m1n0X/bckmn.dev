@@ -1,88 +1,92 @@
-baseurl = "http://www.bckmn.dev"
-title = "~/marvin_beckmann $ "
-theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+baseURL = "http://www.bckmn.dev/"
+theme = "LoveIt"
+title = "Marvin Beckmann"
 
-paginate = 20
+languageCode = "en"
+languageName = "English"
 
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+# Author config
+[author]
+  name = "Marvin Beckmann"
+  email = ""
+  link = ""
 
-disqusShortname = "yourdiscussshortname"
+# Menu config
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
 
-[params]
-  author = "Marvin Beckmann"
-  info = "Full Stack DevOps and Magician"
-  description = ""
-  keywords = "blog,developer,personal"
-  avatarurl = "images/marvin_bw.jpg"
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
 
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+[params.home]
+  [params.home.profile]
+    enable = true
+    avatarURL = "/images/profile.png"
+    subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+    typeit = true
+    social = true
+    disclaimer = ""
+  [params.home.posts]
+    enable = false
+    paginate = 6
 
-  since = 2019
+[params.social]
+  [params.social.Mastodon]
+    weight = 3
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Mastodon"
+  [params.social.Instagram]
+    weight = 2
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Mastodon"
+  [params.social.Linkedin]
+    weight = 1
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Mastodon"
+  [params.social.Email]
+    weight = 1
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Mastodon"
+  [params.social.Discord]
+    weight = 1
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Mastodon"
+  [params.social.Threema]
+    weight = 1
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Mastodon"
 
-  enableTwemoji = true
-
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
-
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
-
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
-
-# Social links
-[[params.social]]
-  name = "Mail"
-  icon = "fa fa-mail fa-2x"
-  weight = 1
-[[params.social]]
-  name = "Github"
-  icon = "fa fa-github fa-2x"
-  weight = 2
-  url = "https://github.com/johndoe/"
-[[params.social]]
-  name = "Gitlab"
-  icon = "fa fa-gitlab fa-2x"
-  weight = 3
-  url = "https://gitlab.com/johndoe/"
-[[params.social]]
-  name = "Discord"
-  icon = "fa fa-discord fa-2x"
-  weight = 4
-  url = "https://twitter.com/johndoe/"
-
-
-[[menu.main]]
-  identifier = "blog"
-  name       = "blog"
-  url        = "/posts"
-  weight     = 1
-[[menu.main]]
-  identifier = "impressum"
-  name       = "impressum"
-  url        = "/posts"
-  weight     = 5
-[[menu.main]]
-  identifier = "resume"
-  name       = "resume"
-  url        = "/posts"
-  weight     = 4
-[[menu.main]]
-  identifier = "skillset"
-  name       = "skillset"
-  url        = "/posts"
-  weight     = 3
-[[menu.main]]
-  identifier = "about_me"
-  name       = "about_me"
-  url        = "/posts"
-  weight     = 2
