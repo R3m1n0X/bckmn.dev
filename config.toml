@@ -27,7 +27,7 @@ languageName = "English"
     pre = ""
     post = ""
     name = "about_me"
-    url = "/categories/"
+    url = "/about_me/"
     title = ""
   [[menu.main]]
     weight = 4
