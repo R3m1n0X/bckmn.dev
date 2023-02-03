@@ -35,7 +35,7 @@ languageName = "English"
     pre = ""
     post = ""
     name = "resume"
-    url = "/categories/"
+    url = "/resume/"
     title = ""
   [[menu.main]]
     weight = 3
@@ -43,7 +43,15 @@ languageName = "English"
     pre = ""
     post = ""
     name = "skillset"
-    url = "/categories/"
+    url = "/skillset/"
+    title = ""
+  [[menu.main]]
+    weight = 5
+    identifier = "projects"
+    pre = ""
+    post = ""
+    name = "projects"
+    url = "/projects/"
     title = ""
   [[menu.main]]
     weight = 10
@@ -51,7 +59,7 @@ languageName = "English"
     pre = ""
     post = ""
     name = "imprint"
-    url = "/categories/"
+    url = "/imprint/"
     title = ""
 
 # Markup related configuration in Hugo
@@ -103,33 +111,33 @@ languageName = "English"
 
 
 [params.social]
-  [params.social.Mastodon]
+  [params.social.Github]
     weight = 3
     id = "@xxxx"
     prefix = "https://mastodon.social/"
-    title = "Mastodon"
+    title = "Github"
   [params.social.Instagram]
+    weight = 6
+    id = "@xxxx"
+    prefix = "https://mastodon.social/"
+    title = "Instagram"
+  [params.social.Linkedin]
     weight = 2
     id = "@xxxx"
     prefix = "https://mastodon.social/"
-    title = "Mastodon"
-  [params.social.Linkedin]
-    weight = 1
-    id = "@xxxx"
-    prefix = "https://mastodon.social/"
-    title = "Mastodon"
+    title = "LinkedIn"
   [params.social.Email]
     weight = 1
     id = "@xxxx"
     prefix = "https://mastodon.social/"
-    title = "Mastodon"
+    title = "EMail"
   [params.social.Discord]
-    weight = 1
+    weight = 4
     id = "@xxxx"
     prefix = "https://mastodon.social/"
-    title = "Mastodon"
-  [params.social.Threema]
-    weight = 1
+    title = "Discord"
+  [params.social.Telegram]
+    weight = 5
     id = "@xxxx"
     prefix = "https://mastodon.social/"
     title = "Mastodon"
